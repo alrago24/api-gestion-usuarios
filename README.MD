@@ -30,4 +30,5 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 
 ## 2. Bitácora de Operaciones CRUD(Respuesta de Postman)
 
+### A. Obtener todos los registros (GET)
 
