@@ -7,8 +7,9 @@
 
 ## 1. Modelo de Datos Diseñado
 
-Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
-``` {
+Se configuró el recurso `USUARIOS` con la siguiente estructura de datos:
+```json
+{
     "Nombre": "Juan",
     "Apellido": "Perez",
     "Cargo": "Asesor",
@@ -34,7 +35,8 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 - Status code: `200`
 - Respuesta de Postman:
 
-```[
+```json
+[
     {
         "Nombre": "Juan",
         "Apellido": "Perez",
@@ -134,7 +136,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 - Status code:  `201 Created`
 - Cuerpo enviado en Postman:
 
-```
+```json
 {
     "Nombre": "Ricardo",
     "Apellido": "Gonzalez",
@@ -156,7 +158,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ```
 - Respuesta de Postman:
 
-```
+```json
 {
     "Nombre": "Ricardo",
     "Apellido": "Gonzalez",
@@ -183,7 +185,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 - Status Code: `200 OK`
 - Respuesta de Postman:
 
-```
+```json
 {
     "Nombre": "Paula",
     "Apellido": "Herrera",
@@ -209,7 +211,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 - Modificación: Se actualizó el turno, idioma y el estado del registro con ID 5
 - Respuesta de Postman:
 
-```
+```json
 {
     "Nombre": "Ricardo",
     "Apellido": "Gonzalez",
@@ -234,7 +236,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 - Status Code: `200 OK`
 - Respuesta de Postman:
 
-```
+```json
 {
     "Nombre": "Maria",
     "Apellido": "Lopez",
@@ -259,7 +261,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 - Status Code: `404 Not Found`
 - Respuesta de Postman:
 
-```
+```json
 "Not found"
 ```
 
