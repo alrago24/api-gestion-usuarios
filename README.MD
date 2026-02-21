@@ -31,7 +31,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ## 2. Bitácora de Operaciones CRUD(Respuesta de Postman)
 
 ### A. Obtener todos los registros (GET)
-- Status code: [200 OK]
+- Status code: <kbd> 200 </kbd>
 - Respuesta de Postman:
 
 ```[
@@ -131,7 +131,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ```
 
 ### B. Creación de un nuevo registro (POST)
-- Status code: [201 Created]
+- Status code:  <kbd> 201 Created </kbd>
 - Cuerpo enviado en Postman:
 
 ```
@@ -180,7 +180,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 
 ### C. Consulta de registro individual (GET)
 - Endpoint: /Usuarios/4
-- Status Code: [200 OK]
+- Status Code: `200 OK`
 - Respuesta de Postman:
 
 ```
@@ -203,3 +203,58 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
     "id": "4"
 }
 ```
+
+### D. Actualización de un registro (PUT)
+- Status Code: `200 OK`
+- Modificación: Se actualizó el turno, idioma y el estado del registro con ID 5
+- Respuesta de Postman:
+
+```
+{
+    "Nombre": "Ricardo",
+    "Apellido": "Gonzalez",
+    "Cargo": "Supervisor",
+    "Servicio": {
+        "Area": "Pagos y Servicios",
+        "Atencion": "BackOffice",
+        "Idioma": "Ingles",
+        "Nivel": "Experto"
+    },
+    "Turno": [
+        "tarde",
+        "Noche",
+        "Mixto"
+    ],
+    "Activo": false,
+    "id": "5"
+}
+```
+
+### E. Eliminación de un registro (DELETE)
+- Status Code: [200 OK]
+- Respuesta de Postman:
+
+```
+{
+    "Nombre": "Maria",
+    "Apellido": "Lopez",
+    "Cargo": "Asesor",
+    "Servicio": {
+        "Area": "Eventos Operacionales",
+        "Atencion": "Front",
+        "Idioma": "Portugues",
+        "Nivel": "Inicial"
+    },
+    "Turno": [
+        "Manana",
+        "tarde",
+        "Noche"
+    ],
+    "Activo": false,
+    "id": "2"
+}
+```
+
+### F. Validación de Recurso inexistente (GET 404)
+- Status Code: [404 OK]
+- Respuesta de Postman:
