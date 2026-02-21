@@ -31,7 +31,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ## 2. Bitácora de Operaciones CRUD(Respuesta de Postman)
 
 ### A. Obtener todos los registros (GET)
-- Status code: <kbd> 200 </kbd>
+- Status code: `200`
 - Respuesta de Postman:
 
 ```[
@@ -131,7 +131,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ```
 
 ### B. Creación de un nuevo registro (POST)
-- Status code:  <kbd> 201 Created </kbd>
+- Status code:  `201 Created`
 - Cuerpo enviado en Postman:
 
 ```
@@ -231,7 +231,7 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ```
 
 ### E. Eliminación de un registro (DELETE)
-- Status Code: [200 OK]
+- Status Code: `200 OK`
 - Respuesta de Postman:
 
 ```
@@ -256,5 +256,20 @@ Se configuro el recurso (USUARIOS) con la siguiente estructura de datos:
 ```
 
 ### F. Validación de Recurso inexistente (GET 404)
-- Status Code: [404 OK]
+- Status Code: `404 Not Found`
 - Respuesta de Postman:
+
+```
+"Not found"
+```
+
+## 3. Resumen de Endpoints y Códigos HTTP
+
+| Acción | Método | Endpoint | Código HTTP |
+| :--- | :--- | :--- | :--- |
+| Listar todo | GET | `/Usuarios` | 200 OK |
+| Crear | POST | `/Usuarios` | 201 Created |
+| Ver por ID | GET | `/Usuarios/4` | 200 OK |
+| Actualizar | PUT | `/Usuarios/5` | 200 OK |
+| Borrar | DELETE | `/Usuarios/2` | 200 OK |
+| Error | GET | `/Usuarios/2` | 404 Not Found |
