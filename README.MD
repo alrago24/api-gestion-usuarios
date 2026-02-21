@@ -180,7 +180,7 @@ Se configuró el recurso `USUARIOS` con la siguiente estructura de datos:
 }
 ```
 
-### C. Consulta de registro individual (GET)
+### C. Consulta de registro individual (GET) 
 - Endpoint: /Usuarios/4
 - Status Code: `200 OK`
 - Respuesta de Postman:
